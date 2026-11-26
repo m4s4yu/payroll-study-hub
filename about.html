@@ -2,147 +2,167 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
 
-        body {
-            font-family: "Segoe UI", sans-serif;
-            background: #F6DAC0;
-            color: #213843;
-        }
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#F6DAC0;
+    color:#213843;
+}
 
-        nav {
-            background: #213843;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 25px 8%;
-        }
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 8%;
+    background:#213843;
+}
 
-        .logo {
-            color: white;
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
+.logo{
+    color:white;
+    text-decoration:none;
+    font-size:1.8rem;
+    font-weight:700;
+}
 
-        .menu a {
-            color: white;
-            text-decoration: none;
-            padding: 12px 24px;
-            border-radius: 999px;
-            margin-left: 10px;
-        }
+.nav-buttons{
+    display:flex;
+    gap:15px;
+}
 
-        .menu a:hover {
-            background: white;
-            color: #213843;
-        }
+.nav-buttons a{
+    text-decoration:none;
+    padding:15px 34px;
+    border-radius:999px;
+    font-weight:600;
+}
 
-        .hero {
-            text-align: center;
-            padding: 80px 20px;
-        }
+.about-btn{
+    background:#FEAF76;
+    color:#213843;
+}
 
-        .hero h1 {
-            font-size: 3.5rem;
-        }
+.study-btn{
+    background:white;
+    color:#213843;
+}
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 0 20px 60px;
-        }
+.hero{
+    text-align:center;
+    padding:100px 20px;
+}
 
-        .card {
-            background: white;
-            border-radius: 35px;
-            padding: 35px;
-            margin-bottom: 25px;
-        }
+.hero h1{
+    font-size:4rem;
+}
 
-        .card h2 {
-            margin-bottom: 15px;
-            color: #DA6D5B;
-        }
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:0 20px 60px;
+}
 
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 15px;
-        }
+.card{
+    background:white;
+    padding:35px;
+    border-radius:35px;
+    margin-bottom:25px;
+}
 
-        .skill {
-            background: #74B3AB;
-            color: white;
-            padding: 12px 22px;
-            border-radius: 999px;
-        }
-    </style>
+.card h2{
+    color:#DA6D5B;
+}
+
+.skills{
+    margin-top:20px;
+}
+
+.skill{
+    display:inline-block;
+    padding:12px 20px;
+    border-radius:999px;
+    background:#74B3AB;
+    color:white;
+    margin:5px;
+}
+
+</style>
 </head>
 
 <body>
 
-    <nav>
-        <div class="logo">🌿 MASAYU</div>
+<nav>
 
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="study-plan.html">Study Plan</a>
-        </div>
-    </nav>
+<a href="index.html" class="logo">🌿 MASAYU</a>
 
-    <section class="hero">
-        <h1>About Me 👋</h1>
-        <p>Income Auditor → Future Payroll Compliance Practitioner</p>
-    </section>
+<div class="nav-buttons">
 
-    <div class="container">
+<a href="about.html" class="about-btn">About Me</a>
 
-        <div class="card">
-            <h2>My Story</h2>
+<a href="study-plan.html" class="study-btn">Study Plan</a>
 
-            <p>
-                I'm Siti Masayu Mohd Sharif currently working in Hotel Finance
-                as an Income Auditor. My role focuses on revenue verification,
-                reconciliations, internal controls, compliance checks and
-                financial reporting support.
-            </p>
-        </div>
+</div>
 
-        <div class="card">
-            <h2>Current Skills</h2>
+</nav>
 
-            <div class="skills">
-                <div class="skill">Income Audit</div>
-                <div class="skill">Hotel Finance</div>
-                <div class="skill">Revenue Reconciliation</div>
-                <div class="skill">Internal Controls</div>
-                <div class="skill">Compliance</div>
-                <div class="skill">Excel</div>
-            </div>
-        </div>
+<section class="hero">
 
-        <div class="card">
-            <h2>Career Goal</h2>
+<h1>Building My Payroll Journey</h1>
 
-            <p>
-                My goal is to grow into Payroll Compliance and Payroll
-                Administration by combining my audit background with expertise
-                in statutory payroll regulations and best practices.
-            </p>
-        </div>
+<p>
+From Income Audit to Payroll Compliance
+</p>
 
-    </div>
+</section>
+
+<div class="container">
+
+<div class="card">
+
+<h2>My Story</h2>
+
+<p>
+I currently work in Hotel Finance as an Income Auditor,
+supporting revenue verification, controls, reconciliations
+and compliance reviews.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Current Skills</h2>
+
+<div class="skills">
+
+<span class="skill">Income Audit</span>
+<span class="skill">Excel</span>
+<span class="skill">Hotel Finance</span>
+<span class="skill">Compliance</span>
+<span class="skill">Controls</span>
+<span class="skill">Reporting</span>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Career Goal</h2>
+
+<p>
+To build expertise in Payroll Administration,
+Payroll Compliance and Malaysian statutory regulations.
+</p>
+
+</div>
+
+</div>
 
 </body>
 
