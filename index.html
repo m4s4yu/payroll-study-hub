@@ -19,46 +19,83 @@
             color: #213843;
         }
 
+        /* HERO */
+
         .hero {
             min-height: 100vh;
-            background: linear-gradient(135deg, #213843, #46B0BB);
-            position: relative;
+
+            background: linear-gradient(
+                135deg,
+                #213843,
+                #46B0BB
+            );
+
             color: white;
         }
+
+        /* NAVIGATION */
 
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 25px 8%;
+
+            padding: 30px 8%;
         }
 
         .logo {
-            font-size: 1.7rem;
-            font-weight: bold;
-        }
-
-        .menu a {
             text-decoration: none;
             color: white;
-            padding: 12px 24px;
-            margin-left: 10px;
-            border-radius: 999px;
-            transition: 0.3s;
+
+            font-size: 1.8rem;
+            font-weight: 700;
         }
 
-        .menu a:hover {
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-buttons a {
+            text-decoration: none;
+            font-weight: 600;
+
+            padding: 15px 34px;
+
+            border-radius: 999px;
+
+            transition: all 0.3s ease;
+        }
+
+        .about-btn {
+            background: #FEAF76;
+            color: #213843;
+        }
+
+        .study-btn {
             background: white;
             color: #213843;
         }
 
+        .nav-buttons a:hover {
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* HERO CONTENT */
+
         .hero-content {
             width: 85%;
             max-width: 1200px;
+
             margin: auto;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             padding-top: 80px;
         }
 
@@ -67,7 +104,7 @@
         }
 
         .left h1 {
-            font-size: 4rem;
+            font-size: 4.2rem;
             line-height: 1.1;
         }
 
@@ -77,81 +114,137 @@
 
         .left p {
             margin-top: 25px;
+
+            max-width: 500px;
+
             line-height: 1.8;
+
+            font-size: 1.1rem;
         }
 
-        .buttons {
-            margin-top: 35px;
-        }
-
-        .btn {
+        .journey-btn {
             display: inline-block;
-            text-decoration: none;
-            padding: 16px 32px;
-            border-radius: 999px;
-            font-weight: 600;
-            margin-right: 10px;
-        }
 
-        .btn-primary {
+            margin-top: 35px;
+
             background: #FEAF76;
             color: #213843;
+
+            text-decoration: none;
+            font-weight: 700;
+
+            padding: 18px 38px;
+
+            border-radius: 999px;
+
+            transition: all .3s ease;
         }
 
-        .btn-secondary {
+        .journey-btn:hover {
             background: white;
-            color: #213843;
+
+            transform: translateY(-3px);
+        }
+
+        /* RIGHT ILLUSTRATION */
+
+        .right {
+            width: 40%;
+
+            display: flex;
+            justify-content: center;
         }
 
         .circle {
+
             width: 350px;
             height: 350px;
-            background: linear-gradient(135deg, #DA6D5B, #FEAF76);
+
             border-radius: 50%;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #DA6D5B,
+                    #FEAF76
+                );
+
             display: flex;
             justify-content: center;
             align-items: center;
+
             font-size: 120px;
+
+            box-shadow:
+                0 20px 40px rgba(0, 0, 0, 0.20);
         }
 
-        .section {
+        /* CONTENT SECTION */
+
+        .content {
             width: 85%;
             max-width: 1100px;
+
             margin: auto;
+
             padding: 80px 0;
         }
 
-        .section h2 {
-            margin-bottom: 20px;
+        .content h2 {
             font-size: 2.5rem;
+
+            margin-bottom: 20px;
         }
 
-        .section p {
-            line-height: 1.8;
+        .content p {
+            line-height: 1.9;
         }
+
+        /* PILLS */
 
         .topic-list {
+            margin-top: 35px;
+
             display: flex;
             flex-wrap: wrap;
+
             gap: 15px;
-            margin-top: 30px;
         }
 
         .topic {
             background: white;
-            padding: 14px 25px;
+
+            padding: 14px 24px;
+
             border-radius: 999px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+            font-weight: 600;
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.08);
         }
+
+        /* FOOTER */
 
         footer {
             background: #213843;
+
             color: white;
+
             text-align: center;
+
             padding: 25px;
         }
 
-        @media(max-width:900px) {
+        /* MOBILE */
+
+        @media (max-width: 900px) {
+
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
             .hero-content {
                 flex-direction: column;
                 text-align: center;
@@ -163,83 +256,9 @@
             }
 
             .left h1 {
-                font-size: 2.7rem;
+                font-size: 3rem;
             }
 
-            .circle {
-                width: 250px;
-                height: 250px;
-                font-size: 80px;
-                margin-top: 40px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <section class="hero">
-
-        <nav>
-            <div class="logo">🌿 MASAYU</div>
-
-            <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="study-plan.html">Study Plan</a>
-            </div>
-        </nav>
-
-        <div class="hero-content">
-
-            <div class="left">
-                <h1>
-                    Payroll Compliance
-                    <span class="highlight">Learning Hub</span>
-                </h1>
-
-                <p>
-                    Building expertise in Malaysian Payroll, EPF, SOCSO,
-                    EIS and PCB while transitioning from Income Audit
-                    into Payroll Compliance.
-                </p>
-
-                <div class="buttons">
-                    <a href="about.html" class="btn btn-primary">About Me</a>
-                    <a href="study-plan.html" class="btn btn-secondary">Study Plan</a>
-                </div>
-            </div>
-
-            <div class="right">
-                <div class="circle">🌸</div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="section">
-        <h2>Hello, I'm Siti Masayu 👋</h2>
-
-        <p>
-            Welcome to my learning hub documenting my journey from Income Audit
-            into Payroll Compliance and Payroll Administration.
-        </p>
-
-        <div class="topic-list">
-            <div class="topic">EPF (KWSP)</div>
-            <div class="topic">SOCSO</div>
-            <div class="topic">EIS</div>
-            <div class="topic">PCB</div>
-            <div class="topic">Payroll Audit</div>
-            <div class="topic">Payroll Controls</div>
-        </div>
-    </section>
-
-    <footer>
-        Made with ☕ 🌸 and determination by Siti Masayu Mohd Sharif
-    </footer>
-
-</body>
-
-</html>
+            .left p {
+                margin-left: auto;
+                margin-right: auto
