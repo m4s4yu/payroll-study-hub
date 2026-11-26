@@ -2,173 +2,238 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Study Plan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Plan | Payroll Compliance Learning Hub</title>
 
-<style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body{
-    margin:0;
-    font-family:'Segoe UI',sans-serif;
-    background:#F6DAC0;
-    color:#213843;
-}
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: #F6DAC0;
+            color: #213843;
+        }
 
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:30px 8%;
-    background:#213843;
-}
+        nav {
+            background: #213843;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.logo{
-    color:white;
-    text-decoration:none;
-    font-size:1.8rem;
-    font-weight:700;
-}
+        .logo {
+            text-decoration: none;
+            color: white;
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
 
-.nav-buttons{
-    display:flex;
-    gap:15px;
-}
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
 
-.nav-buttons a{
-    text-decoration:none;
-    padding:15px 34px;
-    border-radius:999px;
-    font-weight:600;
-}
+        .nav-links a {
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 999px;
+            font-weight: 600;
+        }
 
-.about-btn{
-    background:#FEAF76;
-    color:#213843;
-}
+        .home-btn {
+            background: white;
+            color: #213843;
+        }
 
-.study-btn{
-    background:white;
-    color:#213843;
-}
+        .about-btn {
+            background: #FEAF76;
+            color: #213843;
+        }
 
-.hero{
-    background:linear-gradient(135deg,#213843,#46B0BB);
-    color:white;
-    text-align:center;
-    padding:120px 20px;
-}
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+        }
 
-.hero h1{
-    font-size:4rem;
-}
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
 
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:60px 20px;
-}
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.8;
+        }
 
-.week{
-    background:white;
-    padding:35px;
-    border-radius:35px;
-    margin-bottom:25px;
-}
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
 
-.week h2{
-    color:#DA6D5B;
-}
+        .week {
+            background: white;
+            border-radius: 25px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        }
 
-.week ul{
-    line-height:2;
-}
+        .week h2 {
+            margin-bottom: 15px;
+            color: #213843;
+        }
 
-</style>
+        .week ul {
+            padding-left: 20px;
+            line-height: 2;
+        }
 
+        .progress-section {
+            margin-top: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .checklist {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .item {
+            background: #F6DAC0;
+            padding: 15px;
+            border-radius: 15px;
+            font-weight: 600;
+        }
+
+        footer {
+            background: #213843;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<nav>
+    <nav>
+        <a href="index.html" class="logo">🌿 MASAYU</a>
 
-<a href="index.html" class="logo">🌿 MASAYU</a>
+        <div class="nav-links">
+            <a href="index.html" class="home-btn">Home</a>
+            <a href="about.html" class="about-btn">About Me</a>
+        </div>
+    </nav>
 
-<div class="nav-buttons">
+    <section class="hero">
+        <h1>📚 30-Day Payroll Compliance Study Plan</h1>
 
-<a href="about.html" class="about-btn">About Me</a>
+        <p>
+            A structured beginner-friendly roadmap to build knowledge in
+            Malaysian Payroll, EPF, SOCSO, EIS, PCB taxation, payroll audit,
+            and payroll compliance practices.
+        </p>
+    </section>
 
-<a href="study-plan.html" class="study-btn">Study Plan</a>
+    <div class="container">
 
-</div>
+        <div class="week">
+            <h2>🌱 Week 1: Payroll Fundamentals</h2>
 
-</nav>
+            <ul>
+                <li>Understand the payroll process end-to-end.</li>
+                <li>Learn key payroll terminology.</li>
+                <li>Study employee lifecycle and payroll records.</li>
+                <li>Review the Employment Act 1955 basics.</li>
+                <li>Create summary notes.</li>
+            </ul>
+        </div>
 
-<section class="hero">
+        <div class="week">
+            <h2>💰 Week 2: Statutory Contributions</h2>
 
-<h1>Payroll Compliance Roadmap</h1>
+            <ul>
+                <li>Study EPF (KWSP) contribution rules.</li>
+                <li>Learn SOCSO contribution categories.</li>
+                <li>Understand EIS requirements.</li>
+                <li>Practice contribution calculations.</li>
+                <li>Create a payroll deduction template.</li>
+            </ul>
+        </div>
 
-<p>
-30 Days • 4 Modules • Beginner Friendly
-</p>
+        <div class="week">
+            <h2>📈 Week 3: PCB & Payroll Processing</h2>
 
-</section>
+            <ul>
+                <li>Understand PCB (Monthly Tax Deduction).</li>
+                <li>Learn payroll calculations.</li>
+                <li>Study gross pay vs net pay.</li>
+                <li>Review payroll reports.</li>
+                <li>Practice payroll scenarios.</li>
+            </ul>
+        </div>
 
-<div class="container">
+        <div class="week">
+            <h2>🛡️ Week 4: Payroll Compliance & Audit</h2>
 
-<div class="week">
+            <ul>
+                <li>Understand payroll internal controls.</li>
+                <li>Learn payroll audit procedures.</li>
+                <li>Review common payroll errors.</li>
+                <li>Study compliance risks.</li>
+                <li>Build a personal payroll reference guide.</li>
+            </ul>
+        </div>
 
-<h2>Week 1 • Payroll Fundamentals</h2>
+        <div class="progress-section">
 
-<ul>
-<li>Payroll lifecycle</li>
-<li>Payslip structure</li>
-<li>Salary components</li>
-<li>Payroll terminology</li>
-</ul>
+            <h2>✅ Learning Checklist</h2>
 
-</div>
+            <div class="checklist">
+                <div class="item">☐ Payroll Fundamentals</div>
+                <div class="item">☐ Employment Act 1955</div>
+                <div class="item">☐ EPF (KWSP)</div>
+                <div class="item">☐ SOCSO</div>
+                <div class="item">☐ EIS</div>
+                <div class="item">☐ PCB Tax</div>
+                <div class="item">☐ Payroll Calculations</div>
+                <div class="item">☐ Payroll Audit</div>
+                <div class="item">☐ Internal Controls</div>
+                <div class="item">☐ HR Compliance</div>
+            </div>
 
-<div class="week">
+        </div>
 
-<h2>Week 2 • Statutory Contributions</h2>
+    </div>
 
-<ul>
-<li>EPF (KWSP)</li>
-<li>SOCSO (PERKESO)</li>
-<li>EIS (SIP)</li>
-<li>Contribution calculations</li>
-</ul>
-
-</div>
-
-<div class="week">
-
-<h2>Week 3 • Payroll Processing</h2>
-
-<ul>
-<li>PCB / MTD</li>
-<li>Overtime</li>
-<li>Allowances</li>
-<li>Deductions</li>
-</ul>
-
-</div>
-
-<div class="week">
-
-<h2>Week 4 • Payroll Controls & Audit</h2>
-
-<ul>
-<li>Payroll controls</li>
-<li>Compliance checks</li>
-<li>Reconciliation</li>
-<li>Audit procedures</li>
-</ul>
-
-</div>
-
-</div>
+    <footer>
+        Made with ☕ 🌸 by Siti Masayu Mohd Sharif
+    </footer>
 
 </body>
 
