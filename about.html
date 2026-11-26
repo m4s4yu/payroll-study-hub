@@ -1,190 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
 
-<title>About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: #F6DAC0;
+            color: #213843;
+        }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+        nav {
+            background: #213843;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+        }
 
-body{
-font-family:'Segoe UI',sans-serif;
-background:#F6DAC0;
-color:#213843;
-}
+        .logo {
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
 
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:25px 8%;
-background:#213843;
-}
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 999px;
+            margin-left: 10px;
+        }
 
-.logo{
-color:white;
-font-size:1.5rem;
-font-weight:700;
-}
+        .menu a:hover {
+            background: white;
+            color: #213843;
+        }
 
-.menu a{
-text-decoration:none;
-color:white;
-margin-left:15px;
-padding:10px 22px;
-border-radius:999px;
-transition:.3s;
-}
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
 
-.menu a:hover{
-background:white;
-color:#213843;
-}
+        .hero h1 {
+            font-size: 3.5rem;
+        }
 
-.hero{
-text-align:center;
-padding:100px 20px 60px;
-}
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 0 20px 60px;
+        }
 
-.hero h1{
-font-size:4rem;
-}
+        .card {
+            background: white;
+            border-radius: 35px;
+            padding: 35px;
+            margin-bottom: 25px;
+        }
 
-.hero p{
-margin-top:20px;
-font-size:1.2rem;
-}
+        .card h2 {
+            margin-bottom: 15px;
+            color: #DA6D5B;
+        }
 
-.container{
-max-width:900px;
-margin:auto;
-padding:0 20px 80px;
-}
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 15px;
+        }
 
-.section{
-background:white;
-padding:35px;
-border-radius:35px;
-margin-bottom:25px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-.section h2{
-margin-bottom:15px;
-color:#DA6D5B;
-}
-
-.skills{
-display:flex;
-flex-wrap:wrap;
-gap:12px;
-margin-top:15px;
-}
-
-.skill{
-padding:12px 20px;
-background:#74B3AB;
-color:white;
-border-radius:999px;
-font-weight:600;
-}
-
-footer{
-background:#213843;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-</style>
+        .skill {
+            background: #74B3AB;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 999px;
+        }
+    </style>
 </head>
 
 <body>
 
-<nav>
+    <nav>
+        <div class="logo">🌿 MASAYU</div>
 
-<div class="logo">🌿 MASAYU</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="study-plan.html">Study Plan</a>
+        </div>
+    </nav>
 
-<div class="menu">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="study-plan.html">Study Plan</a>
-</div>
+    <section class="hero">
+        <h1>About Me 👋</h1>
+        <p>Income Auditor → Future Payroll Compliance Practitioner</p>
+    </section>
 
-</nav>
+    <div class="container">
 
-<section class="hero">
+        <div class="card">
+            <h2>My Story</h2>
 
-<h1>About Me 👋</h1>
+            <p>
+                I'm Siti Masayu Mohd Sharif currently working in Hotel Finance
+                as an Income Auditor. My role focuses on revenue verification,
+                reconciliations, internal controls, compliance checks and
+                financial reporting support.
+            </p>
+        </div>
 
-<p>
-Income Auditor → Future Payroll Compliance Practitioner
-</p>
+        <div class="card">
+            <h2>Current Skills</h2>
 
-</section>
+            <div class="skills">
+                <div class="skill">Income Audit</div>
+                <div class="skill">Hotel Finance</div>
+                <div class="skill">Revenue Reconciliation</div>
+                <div class="skill">Internal Controls</div>
+                <div class="skill">Compliance</div>
+                <div class="skill">Excel</div>
+            </div>
+        </div>
 
-<div class="container">
+        <div class="card">
+            <h2>Career Goal</h2>
 
-<div class="section">
+            <p>
+                My goal is to grow into Payroll Compliance and Payroll
+                Administration by combining my audit background with expertise
+                in statutory payroll regulations and best practices.
+            </p>
+        </div>
 
-<h2>My Story</h2>
-
-<p>
-I'm Siti Masayu Mohd Sharif, currently working in Hotel Finance as an Income Auditor. My work involves reconciliation, internal controls, revenue verification, compliance monitoring and financial reporting support.
-</p>
-
-<br>
-
-<p>
-As I continue my professional development, I'm building expertise in payroll administration, statutory compliance and Malaysian payroll regulations including EPF, SOCSO, EIS and PCB.
-</p>
-
-</div>
-
-<div class="section">
-
-<h2>Current Skills</h2>
-
-<div class="skills">
-
-<div class="skill">Income Audit</div>
-
-<div class="skill">Revenue Reconciliation</div>
-
-<div class="skill">Internal Controls</div>
-
-<div class="skill">Excel</div>
-
-<div class="skill">Hotel Finance</div>
-
-<div class="skill">Compliance</div>
-
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>Career Goal</h2>
-
-<p>
-My goal is to combine my audit background with payroll expertise and eventually move into Payroll Executive, Payroll Compliance or Payroll Specialist roles where compliance, controls and process accuracy are critical.
-</p>
-
-</div>
-
-</div>
-
-<footer>
-Made with ☕ and 🌸 by Siti Masayu Mohd Sharif
-</footer>
+    </div>
 
 </body>
+
 </html>
