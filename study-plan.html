@@ -316,6 +316,49 @@
         Made with ☕ 🌸 by Masayu
     </footer>
 
+        <script>
+
+const checkboxes = document.querySelectorAll('.topic-check');
+
+function updateProgress() {
+
+    let completed = 0;
+
+    checkboxes.forEach((box, index) => {
+
+        const saved = localStorage.getItem("topic-" + index);
+
+        if (saved === "true") {
+            box.checked = true;
+        }
+
+        if (box.checked) {
+            completed++;
+        }
+
+        box.addEventListener('change', () => {
+            localStorage.setItem("topic-" + index, box.checked);
+            updateProgress();
+        });
+
+    });
+
+    const percentage = Math.round((completed / checkboxes.length) * 100);
+
+    document.getElementById('progressFill').style.width =
+        percentage + "%";
+
+    document.getElementById('progressText').innerText =
+        percentage + "% Complete (" +
+        completed + "/" +
+        checkboxes.length +
+        " topics)";
+}
+
+updateProgress();
+
+</script>
+        
 </body>
 
 </html>
