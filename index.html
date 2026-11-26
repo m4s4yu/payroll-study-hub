@@ -1,179 +1,412 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Payroll Compliance Practitioner Study Hub</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body{
-        margin:0;
-        font-family:Arial, sans-serif;
-        background:#f4f6f8;
-        }
+<title>Payroll Compliance Learning Hub</title>
 
-        header{
-        background:#213843;
-        color:white;
-        padding:60px 20px;
-        text-align:center;
-        }
+<style>
 
-        nav{
-        background:#46B0BB;
-        padding:15px;
-        text-align:center;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:15px;
-            font-weight:bold;
-        }
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#F6DAC0;
+    color:#213843;
+}
 
-        section{
-            max-width:1000px;
-            margin:auto;
-            padding:20px;
-        }
+/* HERO */
 
-        .card{
-            background:white;
-            border-radius:20px;
-            padding:25px;
-            margin-bottom:25px;
-            box-shadow:0 8px 25px rgba(33,56,67,0.12);
-        }
+.hero{
+    min-height:100vh;
 
-        h2{
-            color:#213843;
-        }
+    background:
+    linear-gradient(
+    135deg,
+    #213843,
+    #46B0BB
+    );
 
-        footer{
-            background:#003366;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
-    </style>
+    color:white;
+
+    position:relative;
+    overflow:hidden;
+}
+
+/* NAV */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 8%;
+}
+
+.logo{
+    font-size:1.7rem;
+    font-weight:800;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    margin-left:15px;
+
+    padding:12px 22px;
+
+    border-radius:999px;
+
+    transition:.3s;
+}
+
+.menu a:hover{
+    background:white;
+    color:#213843;
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+
+    width:85%;
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding-top:80px;
+}
+
+.left{
+    width:50%;
+}
+
+.left h1{
+    font-size:4rem;
+    line-height:1.1;
+}
+
+.highlight{
+    color:#FEAF76;
+}
+
+.left p{
+    margin-top:25px;
+    font-size:1.1rem;
+    max-width:500px;
+    line-height:1.8;
+}
+
+/* BUTTONS */
+
+.buttons{
+    margin-top:35px;
+}
+
+.btn{
+    display:inline-block;
+
+    text-decoration:none;
+
+    padding:16px 32px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    margin-right:10px;
+
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#FEAF76;
+    color:#213843;
+}
+
+.btn-primary:hover{
+    background:white;
+}
+
+.btn-secondary{
+    background:white;
+    color:#213843;
+}
+
+.btn-secondary:hover{
+    background:#74B3AB;
+    color:white;
+}
+
+/* RIGHT SIDE */
+
+.right{
+    width:40%;
+    display:flex;
+    justify-content:center;
+}
+
+.circle{
+
+    width:350px;
+    height:350px;
+
+    border-radius:50%;
+
+    background:
+    linear-gradient(
+    135deg,
+    #DA6D5B,
+    #FEAF76
+    );
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    font-size:120px;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.25);
+}
+
+/* WAVE */
+
+.wave{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+.wave svg{
+    display:block;
+}
+
+/* SECTION */
+
+.section{
+
+    width:85%;
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:80px 0;
+}
+
+.section h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.section p{
+    line-height:1.8;
+}
+
+/* PILLS */
+
+.topic-list{
+    margin-top:40px;
+
+    display:flex;
+    flex-wrap:wrap;
+
+    gap:15px;
+}
+
+.topic{
+    background:white;
+
+    padding:14px 24px;
+
+    border-radius:999px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
+
+    font-weight:600;
+}
+
+/* FOOTER */
+
+footer{
+    background:#213843;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.hero-content{
+    flex-direction:column;
+    text-align:center;
+}
+
+.left{
+    width:100%;
+}
+
+.right{
+    width:100%;
+    margin-top:50px;
+}
+
+.left h1{
+    font-size:2.8rem;
+}
+
+.circle{
+    width:250px;
+    height:250px;
+    font-size:80px;
+}
+
+nav{
+   flex-direction:column;
+   gap:15px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<header>
-    <h1>Payroll Compliance Practitioner Study Hub</h1>
-    <p>Malaysia Payroll Learning Portal</p>
-    <p>Created by Masayu</p>
-</header>
+<section class="hero">
 
 <nav>
+
+<div class="logo">
+🌿 MASAYU
+</div>
+
+<div class="menu">
+
 <a href="index.html">Home</a>
-<a href="about.html">About Me</a>
-<a href="#plan">Study Plan</a>
-<a href="#topics">Topics</a>
-<a href="#career">Career Path</a>
+
+<a href="about.html">About</a>
+
+<a href="#">Study Plan</a>
+
+<a href="#">Topics</a>
+
+</div>
+
 </nav>
 
-<section>
+<div class="hero-content">
 
-<div class="card">
-<h2>My Professional Profile</h2>
+<div class="left">
 
-<p>
-Currently working in hotel finance as an Income Auditor with experience in:
-</p>
-
-<ul>
-<li>Revenue reconciliation</li>
-<li>Internal controls</li>
-<li>Audit verification</li>
-<li>Compliance monitoring</li>
-<li>Financial reporting support</li>
-</ul>
+<h1>
+Payroll Compliance
+<span class="highlight">Learning Hub</span>
+</h1>
 
 <p>
-I am currently preparing for a transition into Payroll Compliance and Payroll Administration.
-</p>
-</div>
-    
-<div class="card" id="studyplan">
-<h2>30-Day Payroll Study Plan</h2>
 
-<ul>
-<li>Week 1 - Payroll Fundamentals</li>
-<li>Week 2 - Payroll Calculations</li>
-<li>Week 3 - Payroll Audit & Controls</li>
-<li>Week 4 - Professional Payroll Skills</li>
-</ul>
+Building expertise in Malaysian Payroll, EPF (KWSP),
+SOCSO, EIS, PCB and Payroll Controls.
 
-<p>
-Target Outcome:
-Confidently apply for Payroll Executive positions.
-</p>
-</div>
+Transitioning from Income Audit into Payroll Compliance
+through continuous learning and practical application.
 
-<div class="card" id="epf">
-<h2>EPF (KWSP)</h2>
-
-<p>
-Employees Provident Fund contributions are mandatory retirement savings deductions.
 </p>
 
-<p>
-Topics:
-</p>
+<div class="buttons">
 
-<ul>
-<li>Employee contribution</li>
-<li>Employer contribution</li>
-<li>Submission deadlines</li>
-<li>Penalties for late payment</li>
-</ul>
+<a href="about.html" class="btn btn-primary">
+About Me
+</a>
+
+<a href="#" class="btn btn-secondary">
+Study Plan
+</a>
 
 </div>
 
-<div class="card" id="socso">
-<h2>SOCSO (PERKESO)</h2>
+</div>
 
-<ul>
-<li>Employment Injury Scheme</li>
-<li>Invalidity Scheme</li>
-<li>Contribution schedules</li>
-<li>Employer obligations</li>
-</ul>
+<div class="right">
+
+<div class="circle">
+🌸
+</div>
 
 </div>
 
-<div class="card" id="eis">
-<h2>EIS (SIP)</h2>
+</div>
 
-<ul>
-<li>Job loss protection</li>
-<li>Contribution rates</li>
-<li>Employee eligibility</li>
-</ul>
+<div class="wave">
+
+<svg viewBox="0 0 1440 320">
+
+<path fill="#F6DAC0"
+
+d="M0,256L80,245.3C160,235,320,213,480,213.3C640,213,800,235,960,224C1120,213,1280,171,1360,149.3L1440,128L1440,320L0,320Z">
+</path>
+
+</svg>
 
 </div>
 
-<div class="card" id="career">
-<h2>Career Roadmap</h2>
+</section>
+
+<section class="section">
+
+<h2>Hello, I'm Siti Masayu 👋</h2>
 
 <p>
-Income Auditor
-→ Finance Executive
-→ Payroll Executive
-→ Senior Payroll Executive
-→ Payroll Specialist
-→ Payroll Manager
+
+I currently work in Hotel Finance as an Income Auditor
+and am building expertise in Payroll Compliance,
+Payroll Administration and Malaysian statutory regulations.
+
+This website documents my journey, study notes,
+career roadmap and practical payroll learning.
+
 </p>
+
+<div class="topic-list">
+
+<div class="topic">EPF (KWSP)</div>
+
+<div class="topic">SOCSO</div>
+
+<div class="topic">EIS</div>
+
+<div class="topic">PCB</div>
+
+<div class="topic">Payroll Audit</div>
+
+<div class="topic">Payroll Controls</div>
+
+<div class="topic">Compliance</div>
 
 </div>
 
 </section>
 
 <footer>
-Payroll Compliance Practitioner Study Hub | Malaysia
+
+Made with ☕ 🌸 and determination by Siti Masayu Mohd Sharif
+
 </footer>
 
 </body>
