@@ -52,6 +52,10 @@
             transition: 0.3s;
         }
 
+        .nav-buttons a:hover {
+            transform: translateY(-2px);
+        }
+
         .about-btn {
             background: #FEAF76;
             color: #213843;
@@ -89,6 +93,7 @@
             margin-top: 25px;
             line-height: 1.8;
             max-width: 500px;
+            font-size: 1.1rem;
         }
 
         .journey-btn {
@@ -100,6 +105,11 @@
             color: #213843;
             text-decoration: none;
             font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .journey-btn:hover {
+            transform: translateY(-2px);
         }
 
         .right {
@@ -117,6 +127,7 @@
             justify-content: center;
             align-items: center;
             font-size: 120px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
         }
 
         .content {
@@ -131,6 +142,11 @@
             margin-bottom: 20px;
         }
 
+        .content p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
         .topic-list {
             margin-top: 30px;
             display: flex;
@@ -143,6 +159,7 @@
             padding: 14px 24px;
             border-radius: 999px;
             font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
         }
 
         footer {
@@ -152,7 +169,7 @@
             padding: 25px;
         }
 
-        @media(max-width:900px) {
+        @media (max-width: 900px) {
 
             nav {
                 flex-direction: column;
@@ -180,7 +197,6 @@
                 margin-top: 40px;
             }
         }
-
     </style>
 </head>
 
@@ -189,13 +205,11 @@
     <section class="hero">
 
         <nav>
-
             <a href="index.html" class="logo">
                 🌿 MASAYU
             </a>
 
             <div class="nav-buttons">
-
                 <a href="about.html" class="about-btn">
                     About Me
                 </a>
@@ -203,37 +217,32 @@
                 <a href="study-plan.html" class="study-btn">
                     Study Plan
                 </a>
-
             </div>
-
         </nav>
 
         <div class="hero-content">
 
             <div class="left">
-
                 <h1>
                     Payroll Compliance
                     <span class="highlight">Learning Hub</span>
                 </h1>
 
                 <p>
-                    Building expertise in Malaysian Payroll,
-                    EPF, SOCSO, EIS and PCB.
+                    Building expertise in Malaysian Payroll, EPF (KWSP),
+                    SOCSO, EIS and PCB while documenting my career journey
+                    from Income Audit into Payroll Compliance.
                 </p>
 
                 <a href="about.html" class="journey-btn">
                     Start My Journey →
                 </a>
-
             </div>
 
             <div class="right">
-
                 <div class="circle">
                     🌸
                 </div>
-
             </div>
 
         </div>
@@ -245,25 +254,27 @@
         <h2>Hello, I'm Siti Masayu 👋</h2>
 
         <p>
-            Welcome to my payroll learning portfolio and documentation
-            of my journey from Income Audit into Payroll Compliance.
+            Welcome to my Payroll Compliance Learning Portfolio. This website
+            tracks my learning journey, study materials, notes, and progress
+            towards building a career in payroll, compliance, and HR operations
+            in Malaysia.
         </p>
 
         <div class="topic-list">
-
             <div class="topic">EPF (KWSP)</div>
             <div class="topic">SOCSO</div>
             <div class="topic">EIS</div>
             <div class="topic">PCB</div>
             <div class="topic">Payroll Audit</div>
             <div class="topic">Payroll Controls</div>
-
+            <div class="topic">Malaysian Employment Law</div>
+            <div class="topic">HR Compliance</div>
         </div>
 
     </section>
 
     <footer>
-        Made with ☕ 🌸 by Siti Masayu Mohd Sharif
+        Made with ☕ 🌸 by Masayu
     </footer>
 
 </body>
