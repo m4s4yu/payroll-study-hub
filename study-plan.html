@@ -118,6 +118,42 @@
             font-weight: 600;
         }
 
+        .progress-bar {
+    width: 100%;
+    height: 24px;
+    background: #e6e6e6;
+    border-radius: 999px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #46B0BB, #FEAF76);
+    transition: 0.4s ease;
+}
+
+#progressText {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.item {
+    background: #F6DAC0;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.item input {
+    width: 18px;
+    height: 18px;
+}
         footer {
             background: #213843;
             color: white;
@@ -212,24 +248,69 @@
 
         <div class="progress-section">
 
-            <h2>✅ Learning Checklist</h2>
+    <h2>✅ Learning Progress Tracker</h2>
 
-            <div class="checklist">
-                <div class="item">☐ Payroll Fundamentals</div>
-                <div class="item">☐ Employment Act 1955</div>
-                <div class="item">☐ EPF (KWSP)</div>
-                <div class="item">☐ SOCSO</div>
-                <div class="item">☐ EIS</div>
-                <div class="item">☐ PCB Tax</div>
-                <div class="item">☐ Payroll Calculations</div>
-                <div class="item">☐ Payroll Audit</div>
-                <div class="item">☐ Internal Controls</div>
-                <div class="item">☐ HR Compliance</div>
-            </div>
+    <p id="progressText">0% Complete</p>
 
-        </div>
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <div class="checklist">
+
+        <label class="item">
+            <input type="checkbox" class="topic-check">
+            Payroll Fundamentals
+        </label>
+
+        <label class="item">
+            <input type="checkbox" class="topic-check">
+            Employment Act 1955
+        </label>
+
+        <label class="item">
+            <input type="checkbox" class="topic-check">
+            EPF (KWSP)
+        </label>
+
+        <label class="item">
+            <input type="checkbox" class="topic-check">
+            SOCSO
+        </label>
+
+        <label class="item">
+            <input type="checkbox" class="topic-check">
+            EIS
+        </label>
+
+        <label class="item">
+            <input type="checkbox" class="topic-check">
+            PCB Tax
+        </label>
+
+        <label class="item">
+            <input type="checkbox" class="topic-check">
+            Payroll Calculations
+        </label>
+
+        <label class="item">
+            <input type="checkbox" class="topic-check">
+            Payroll Audit
+        </label>
+
+        <label class="item">
+            <input type="checkbox" class="topic-check">
+            Internal Controls
+        </label>
+
+        <label class="item">
+            <input type="checkbox" class="topic-check">
+            HR Compliance
+        </label>
 
     </div>
+
+</div>
 
     <footer>
         Made with ☕ 🌸 by Masayu
